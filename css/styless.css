@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --var-color: #020202;
+}
+.main-container {
+  width: 1140px;
+  height: 3235px;
+}
+.header {
+  width: 1140px;
+  height: 112px;
+  display: flex;
+  padding: 0px 140px;
+  background-color: var(--var-color);
+}
