@@ -5,15 +5,131 @@
 }
 :root {
   --var-color: #020202;
+  --var-button-colors: #fcaf17;
+  --var-2nd-button-color: #606060;
 }
-.main-container {
-  width: 1140px;
-  height: 3235px;
+body {
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+/* header */
 .header {
-  width: 1140px;
+  width: 1480px;
   height: 112px;
   display: flex;
   padding: 0px 140px;
   background-color: var(--var-color);
+  justify-content: space-between;
+  align-items: center;
+}
+.header-first-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-list {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 47px;
+}
+.first-li {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+}
+.second-li {
+  padding-right: 24px;
+}
+.header-secod-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.launch-button {
+  width: 193px;
+  height: 52px;
+  border-radius: 8px;
+  margin-right: 40px;
+  background-color: var(--var-button-colors);
+}
+.search-img {
+  padding-right: 24px;
+}
+/* banner */
+.gta-banner {
+  width: 1480px;
+  margin-bottom: 80px;
+}
+.main {
+  width: 1480px;
+  height: 2009px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+}
+/* first section */
+.catagory-and-games {
+  width: 1160px;
+  height: 554px;
+}
+.gaming-platforms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.platforms {
+  display: flex;
+  align-items: center;
+}
+.platforms button {
+  height: 32px;
+  border-radius: 100px;
+  color: white;
+  background-color: var(--var-2nd-button-color);
+}
+.PC {
+  width: 70px;
+  margin-right: 16px;
+}
+.Console {
+  width: 106px;
+  margin-right: 16px;
+}
+.last-button {
+  width: 196px;
+}
+/* thumbnails */
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+.thumbnails img {
+  width: 216px;
+  height: 315px;
+  border-radius: 16px;
+}
+.gta5 {
+  grid-column: 1/2;
+}
+.thumbnails-button-div {
+  display: flex;
+  justify-content: center;
+}
+.thumbnails-button-div button {
+  width: 260px;
+  height: 63px;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 60px 0px 0px 112px;
+  color: #020202;
+  background-color: var(--var-button-colors);
 }
